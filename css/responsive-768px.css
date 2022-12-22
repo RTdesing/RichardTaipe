@@ -1,0 +1,123 @@
+/* RESPONSIVE*/
+@media(max-width: 768px){
+
+    /*HEADER RESPOSIVE*/
+    header,.cont-banner, .contenedor-footer{
+        padding: 0 25px;
+    }
+
+    /*MENU RESPOSIVE*/
+    .mostrar-menu{
+        display:block;
+    }
+    
+    .menu{
+        position:fixed;
+        width: 50%;
+        height: 100vh;
+        background: linear-gradient(to top, hsla(209, 100%, 22%, 1), hsla(185, 100%, 33%, 1));
+        right: -100%;
+        top:0;
+        text-align: center;
+        padding-top: 80px;
+        transition: 0.8s;
+    }
+    .menu a{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 20px 0px 20px 0px;
+        text-transform: uppercase; 
+    }
+
+    .CV-boton{
+        margin: 0px 50px;
+    }
+
+    .redes-sociales {
+        display: flex;
+        position: fixed;
+        justify-content: center;
+        width: 50%;
+        bottom: 10px;
+        gap: 10px;
+        cursor: pointer;
+    }
+    .redes:hover{
+        transform: scale(1.1) translateY(-2px);
+        filter: brightness(0) saturate(100%) invert(9%) sepia(45%) saturate(895%) hue-rotate(214deg) brightness(86%) contrast(91%);
+
+    }
+    .mostrar-menu{
+        z-index: 100;
+        
+    }
+    #check:checked ~ .menu{
+        right: 0;   
+    }
+    #check:checked ~ .mostrar-menu #spn1{
+        bottom:  15px;
+        transform: rotate(225deg);
+        transition-delay: .12s;  
+        transition: bottom .1s ease-in .25s,transform  cubic-bezier(.55,.055,.675,.19) .22s;
+    }
+    #check:checked ~ .mostrar-menu #spn2{
+        opacity: 0;
+    }
+    #check:checked ~ .mostrar-menu #spn3{
+        top: 12px;
+        transform: rotate(135deg);   
+        transition-delay: .12s;   
+        transition: bottom .1s ease-in .25s,transform  cubic-bezier(.55,.055,.675,.19) .22s;
+    }
+    /*INICIO*/
+    .text-banner h1{
+        font-size: 35px;
+        padding-bottom: 0;
+    }
+    .anim-word h1{
+        font-size: 22px;
+        font-weight: 400;
+        padding-bottom: 20px;
+        color: #0099a8;
+        position: relative;
+        height: 15px;
+    }
+
+    .text-banner p{
+        font-size: 14px;
+    }
+
+
+
+    /*FOOTER RESPOSIVE*/
+    footer{
+        width: 100%;
+    
+    }
+    .contenedor-footer{
+        display: none;
+    }
+    .contenedorfooter-responsive{
+        display: block;
+        text-align: center;
+        justify-items: center;
+        padding: 20px 25px;
+        color: white;
+        font-size: 10px;
+    }
+    
+    .contenedorfooter-responsive p{
+        display: inline-block;
+        padding: 20px 3%;
+    }
+
+    .contenedorfooter-responsive p:hover{
+        filter: brightness(0) saturate(100%) invert(9%) sepia(45%) saturate(895%) hue-rotate(214deg) brightness(86%) contrast(91%);
+        transform: scale(1.1) translateY(-1px);
+    }
+
+    .titulo-final{
+        font-size: 10px;
+    }
+}
