@@ -159,7 +159,7 @@ header {
 /*BANNER*/
 .Bannerinicio{
     width: 100%;
-    background:linear-gradient(to right, #221C35, rgba(0, 153, 168, 0.4)), url(/png/fondo.png),#221C35;
+    background:linear-gradient(to right, #221C35, rgba(0, 153, 168, 0.4)), url(png/fondo.png),#221C35;
     background-size: 100% 100%;   
 }
 .cont-banner{
